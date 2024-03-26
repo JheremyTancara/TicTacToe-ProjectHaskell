@@ -6,10 +6,10 @@ import Data.Time.Clock.POSIX ( getPOSIXTime )
 
 main = do
   putStrLn $ replicate 20 '\n'
-  putStrLn "\nWelcome to tic-tac-toe!\n"
-  putStrLn "To enter a move, type 'LN' where L is an uppercase letter signifying the column name and N is a number 0-9 signifying the row number.\n"
+  putStrLn "\nWelcome to tic-tac-toe on console!\n"
+  putStrLn "To enter a move, type 'CR', where C is the column (A, B, C) and R (0, 1, 2) is the row.\n"
   putStrLn "Type 'exit' at any time to quit.\n"
-  putStrLn "Two players or one? (1/2): "
+  putStrLn "Start the game with two or one players? (1/2): "
   input <- getLine
   if input == "1" then
     gameLoop emptyBoard 'x' True
